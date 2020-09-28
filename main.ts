@@ -4,6 +4,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 basic.forever(function () {
     degress = input.compassHeading()
+    basic.showString("" + (degress))
     if (degress <= 45) {
         basic.showString("N")
     } else if (degress > 45 && degress <= 135) {
